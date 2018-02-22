@@ -1,0 +1,85 @@
+\documentclass{article}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array, xcolor}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\definecolor{lightgray}{gray}{0.8}
+\definecolor{charcoal}{HTML}{555555}
+\definecolor{DarkPastelBlue}{HTML}{779ECB}
+\definecolor{DarkPastelGreen}{HTML}{03C03C}
+\definecolor{DarkPastelMagenta}{HTML}{F49AC2}
+\definecolor{DarkPastelPurple}{HTML}{966FD6}
+\definecolor{DarkPastelOrange}{HTML}{FFB347}
+
+\newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay] 
+   \node [xshift=.5\paperwidth,yshift=-2cm,rectangle,
+         fill=charcoal,align=center, minimum width=\paperwidth-1cm, minimum height=3cm] at (current page.north west)
+{\color {white}  \Huge Daniel Hughes \\
+\color {white}  \large Senior Software Engineer};
+\end{tikzpicture}
+
+\begin{minipage}[ht]{0.48\textwidth}
+address placeholder\\
+Christchruch 8053\\
+New Zealand
+\end{minipage}
+\begin{minipage}[ht]{0.48\textwidth}
+http://stackoverflow.com/users/78561/trampster\\
+email placeholder\\
+phone number placeholder
+\end{minipage}
+
+
+\section*{\color {DarkPastelBlue} Education}
+\begin{tabular}{L!{\VRule}R}
+1994--2000&{\textbf{Middleton Grange School}. I was made a Prefect in my final year. I was heavilly involved in school music, orchestra, choir and school productions.}\\[5pt]
+2001--2005&BE honors University of Canterbury New Zealand\\
+\end{tabular}
+
+\section*{\color {DarkPastelGreen} Work History}
+\begin{tabular}{L!{\VRule}R}
+2005--2018&{\textbf{ Tait Electronics Ltd} Developing windows destop, server and android software for configuring, upgrading, encrypting and supporting Tait radios. }\\[5pt]
+\end{tabular}
+
+\section*{\color {DarkPastelMagenta} Skills}
+\begin{tabular}{L!{\VRule}R}
+c\#&{Deep knowledge of c\# and dotnet, including pinvoke, reflection, IL.Emit, threading, linq and much more.}\\
+WinForms&{Extensive experence with WinForms applications}\\
+WPF&{Some experence with WPF and application of the MVVM design pattern}\\
+GTK&{I created a GTK\# UI for WideMargin to run it on linux}\\
+Xamarin&{I was the primary develper on two android apps using c\#, One for loading encryption keys into radio and one for using your phone as a remote head for a Tait radio which can be downloaded here: https://play.google.com/store/apps/details?id=com.taitradio.unifyvehicle}\\
+WiX&{I have used WiX to develop installers of for .net software ranging from destop apps to windows services and websites.}\\
+debian packaging&{I have packaged both my personal project Wide Margin and lucene.net for debian and had it accepted into the debian repositories}\\
+ASP.net&{I have a little experence with ASP.net MVC using Razor, and have dabbled with typescript and javascript.}\\
+TDD&{I am a firm believer in test driven development, dependeny injection and mocking which I do with nunit, moq and ninject. I believe this approach aids in producing clean and modular code. }\\
+Agile&{I have many years of experence on an agile team following scrum methodologies using JIRA.}\\
+\end{tabular}
+
+\section*{\color {DarkPastelPurple} Open Source Contributions}
+\begin{tabular}{L!{\VRule}R}
+ForGet&{ForGet is a package management system which I created to solve some short commings of nuget that my team at Tait encountered. https://bitbucket.org/trampster/forget/wiki/Home}\\
+Jsonics&{Jsonics is an ultra high performance json library I created. It uses advanced .net techiques such as IL.Emit to generate optimal code at runtime to fit the Json being serialized. https://github.com/trampster/Jsonics}\\
+WideMargin&{I am the developer of Wide Margin. Wide Margin is an opensource, cross platform bible program written in c\# which runs on Linux using GTK and Windows using WPF. www.widemargin.org}\\[5pt]
+Sword&{Created the c\# bindings for libsword (http://www.crosswire.org/) and had them accepted into the project. My bindings can be found in svn (https://crosswire.org/svn/sword/trunk) in the binding/csharp folder)}\\[5pt]
+Debian&{Packaged Wide Margin and lucene.net both of which have been accepted into debian.}\\[5pt]
+\end{tabular}
+
+\section*{\color {DarkPastelOrange} Hobbies}
+\begin{tabular}{L!{\VRule}R}
+Flute&{I have a grade 8 in flute and was the lead flute in the christchurch youth symphonic band.}\\
+Gym&{I live an active lifestyle and visit the gym 2 times a week on a strength based program}\\
+Programming&{Programming is a hobbie I pursue in my own time, working on opensource projects and exploring new technolgies. I would do this regardless of what my day job was.}\\
+Ubuntu&{I exclusively run Ubuntu at home on my destop and laptop. I also have a ubuntu machine using mythtv to run my TV which also serves as a file server and media centre.}
+\end{tabular}
+
+\end{document}
